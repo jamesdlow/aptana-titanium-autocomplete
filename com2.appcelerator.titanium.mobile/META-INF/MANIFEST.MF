@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %providerName
+Bundle-Version: 1.2.0.00001
+Bundle-Localization: plugin
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com2.appcelerator.titanium.mobile.1.2;singleton:=true
+Require-Bundle: org.eclipse.help,
+ com.aptana.ide.snippets,
+ com.aptana.ide.samples,
+ com.aptana.ide.core.ui,
+ com.aptana.ide.core,
+ com.aptana.ide.projects,
+ com.aptana.ide.editor.js

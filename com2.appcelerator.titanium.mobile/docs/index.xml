@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Titanium Mobile 1.2.0 Reference" link_to="../com.aptana.ide.documentation/tocreference.xml#libraries"> 
+	<topic label="Titanium Mobile 1.2.0"  href="http://developer.appcelerator.com/apidoc/mobile"> 
+		<topic label="Titanium.API"  href="http://developer.appcelerator.com/apidoc/mobile/1.2/Titanium.API-module" /> 
+	</topic>
+</toc>

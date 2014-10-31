@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+<!--	<extension point="org.eclipse.help.toc">
+		<toc file="docs/index.xml"/>
+	</extension>-->
+	<extension point="org.eclipse.eclipsemonkey.scriptpath">
+		<scriptpath directory="scripts"/>
+	</extension>
+	<extension point="com.aptana.ide.snippets.snippetspath">
+		<snippetsinfo directory="snippets"/>
+	</extension>
+<!--	<extension point="com.aptana.ide.projects.library">
+		<libraryinfo directory="libraries"
+			iconFile="icons/ti_small.png"
+			name="Titanium Mobile 1.2.0"/>
+	</extension>-->
+	<extension point="com.aptana.ide.samples.samplespath">
+		<samplesinfo directory="samples"
+			iconFile="icons/ti_small.png"
+			name="Titanium Mobile 1.2.0"
+			previewHandler="com.aptana.ide.documentation.samples.AjaxSamplesPreviewHandler">
+			<include path="libraries/lib"/>
+			<nature id="com.aptana.ide.project.nature.web"/>
+		</samplesinfo>
+	</extension>
+	<extension point="org.eclipse.ui.views">
+		<view category="com.aptana.ide.documentation"
+			class="com.aptana.ide.core.ui.views.browser.DefaultBrowserView"
+			icon="icons/ti_small.png"
+			id="com.aptana.ide.documentation.titaniummobile.api"
+			name="Titanium API Documentation">
+			<description>http://developer.appcelerator.com/apidoc/mobile</description>
+		</view>
+	</extension>
+	<extension point="com.aptana.ide.editor.js.scriptdoc">
+		<js-file path="support/timobile.js" user-agent="Titanium Mobile 1.2" icon="icons/ti_small.png" />
+	</extension>
+	<!-- Called com2 for two reasons, 1) this is not official, 2) if it isn't loaded after com.aptana the browser view doesn't work -->
+	<extension point="com.aptana.ide.update.feature">
+		<feature id="com2.appcelerator.titanium.mobile.1.2"></feature>
+	</extension>
+</plugin>

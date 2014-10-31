@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<feature url="build/com2.appcelerator.titanium.mobile.1.2_1.2.0.00001.jar" id="com2.appcelerator.titanium.mobile.1.2" version="1.2.0.00001">
+		<category name="Titanium Mobile"/>
+	</feature>
+</site>

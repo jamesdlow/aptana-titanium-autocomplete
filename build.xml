@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Titanium" default="zip" basedir=".">
+    <property name="props" value="build.properties"/>
+    <property file="${props}"/>
+	<property name="src" location="${id}"/>
+
+	<target name="props" description="Do property changes">
+		<propertyfile file="${props}">
+			<entry key="build.date" type="date" value="now"/>
+			<entry  key="build.number" type="int" value="1" operation="+" pattern="00000"/>
+		</propertyfile>
+	</target>
+
+	<target name="zip" description="Make zip" depends="props">
+		<zip destfile="build/${id}.${release}_${version}.${build.number}.zip"
+			basedir="${src}"
+			includes="**/*" />
+	</target>
+
+	<target name="jar" description="Make jar" depends="props">
+		<zip destfile="build/${id}.${release}_${version}.${build.number}.jar"
+			basedir="${src}"
+			includes="**/*" />
+	</target>
+
+	<target name="all" description="Make zip and jar" depends="zip,jar">
+	</target>
+
+</project>
